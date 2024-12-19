@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Task Input Section */
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-input input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #45a049;
+}
+
+/* Filter Section */
+.task-filter {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Increased gap for better spacing */
+  margin-bottom: 20px;
+}
+
+.task-filter button {
+  padding: 12px 25px;  /* Increased padding for better visibility */
+  font-size: 16px;
+  background-color: #4CAF50;  /* Consistent button color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 100px;  /* Ensures buttons are wide enough */
+  transition: background-color 0.3s ease;
+}
+
+.task-filter button:hover {
+  background-color: #45a049;  /* Slight color change on hover */
+}
+
+/* Task List */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.task-list li.completed {
+  background-color: #d3ffd3;
+  text-decoration: line-through;
+}
+
+.task-list li button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.task-list li button:hover {
+  background-color: #e53935;
+}
+
+.task-list li span {
+  flex-grow: 1;
+  cursor: pointer;
+}
